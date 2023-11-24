@@ -8,7 +8,7 @@ const UpperNavbar = () => {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        padding: "9px",
+        padding: "4px",
         gap:"16px",
         fontWeight:600
       }}
@@ -18,7 +18,6 @@ const UpperNavbar = () => {
           fontWeight:600,
           color: "black",
           textDecoration: "underline", // Add underline
-          marginLeft: "10px", // Add margin between the buttons
         }}
       >
         LOGIN

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-
+import logoImage from "../../assets/logo.png"
 const commonButtonStyle = {
   color: "black",
   fontWeight: 800,
@@ -23,25 +23,18 @@ const MainNavbar = () => {
     <div
       style={{
         backgroundColor: "#F4ECDF",
-        height: "50px",
+        height: "60px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "9px",
+        padding: "16px 8px",
         gap: "16px",
         fontWeight: 600,
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       }}
-    >
-      <Button
-        style={{
-          ...commonButtonStyle,
-          textDecoration: "underline",
-          marginLeft: "10px",
-        }}
-      >
-        logo
-      </Button>
+    >   <img src={logoImage} alt="Logo" style={{width:"50px", height:"50px"}} />
+      
+
       <div>
         {buttonsData.map((button, index) => (
           <Button
