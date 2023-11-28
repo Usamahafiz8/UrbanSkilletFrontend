@@ -1,6 +1,7 @@
 import React from "react";
-import logoImage from "../../assets/logo.png"; // Update the path to your actual logo file
 import { Typography } from "@mui/material";
+import Uheading1 from "../uHeading/uHeading1";
+import Uheading2 from "../uHeading/Uheadings";
 
 const Link = [
   { name: "Order Now", link: "#" },
@@ -21,13 +22,14 @@ export const ServicesSection = () => {
         // justifyContent: "center",
         width: "100%",
         alignItems: "center",
-        padding: "16px",
+  
       }}
     >
+      <Uheading1>Our Services</Uheading1>
       {Link.map((button, index) => (
-        <Typography key={index} href={button.link}>
+        <Uheading2 key={index} href={button.link}>
           {button.name}
-        </Typography>
+        </Uheading2>
       ))}
     </div>
   );

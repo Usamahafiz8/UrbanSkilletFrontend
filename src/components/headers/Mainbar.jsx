@@ -27,7 +27,7 @@ const MainNavbar = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "16px 8px",
+        padding: "16px 50px",
         gap: "16px",
         fontWeight: 600,
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
@@ -47,7 +47,7 @@ const MainNavbar = () => {
           </Button>
         ))}
       </div>
-      <Button variant="contained" color="error">
+      <Button variant="contained" color="error"           style={{ fontWeight: 700,  height: "30px" }}>
         Open Your Urban Skillet
       </Button>
     </div>

@@ -22,7 +22,8 @@ const CUSTOM_THEME = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Inter, sans-serif', // Set the default text font to Inter
+    fontFamily: 'Inter, sans-serif', 
+
   },
 });
 

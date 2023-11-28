@@ -1,7 +1,11 @@
 import React from "react";
 import logoImage from "../../assets/logo.png"; // Update the path to your actual logo file
 import { ButtonGroup, Button } from "@mui/material";
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import TwitterIcon from "../../assets/svg/twitterIcon";
+import YoutubeIcon from "../../assets/svg/youtubeIcon";
+import FacebookIcon from "../../assets/svg/facebookIcon";
+import InstagramIcon from "../../assets/svg/InstagramIcon";
+import TicktokIcon from "../../assets/svg/ticktok";
 
 export const LogoSection = () => {
   return (
@@ -9,10 +13,8 @@ export const LogoSection = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        // justifyContent: "center",
         width: "100%",
         alignItems: "center",
-        padding:"16px"
       }}
     >
       <img
@@ -20,13 +22,21 @@ export const LogoSection = () => {
         alt="Logo"
         style={{ height: "80px", width: "80px" }}
       />
-      <ButtonGroup variant="text" aria-label="text button group">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-        <Button>Three</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "16px",
+          justifyContent: "center",
+          marginTop: "25px",
+        }}
+      >
+        <FacebookIcon />
+        <TwitterIcon />
+        <InstagramIcon />
+        <YoutubeIcon />
+        <TicktokIcon />
+      </div>
     </div>
   );
 };

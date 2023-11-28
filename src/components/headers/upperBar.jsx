@@ -8,7 +8,7 @@ const UpperNavbar = () => {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        padding: "4px",
+        padding: "10px 50px",
         gap:"16px",
         fontWeight:600
       }}
