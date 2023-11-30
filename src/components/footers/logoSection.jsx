@@ -1,6 +1,5 @@
 import React from "react";
-import logoImage from "../../assets/logo.png"; // Update the path to your actual logo file
-import { ButtonGroup, Button } from "@mui/material";
+import logoImage from "../../assets/png/logo.png";
 import TwitterIcon from "../../assets/svg/twitterIcon";
 import YoutubeIcon from "../../assets/svg/youtubeIcon";
 import FacebookIcon from "../../assets/svg/facebookIcon";

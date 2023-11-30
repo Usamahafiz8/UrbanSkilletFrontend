@@ -9,13 +9,14 @@ const UpperNavbar = () => {
         justifyContent: "flex-end",
         alignItems: "center",
         padding: "10px 50px",
-        gap:"16px",
-        fontWeight:600
+        gap: "16px",
+        fontWeight: 600,
+        backgroundColor:"smokewhite"
       }}
-      >
+    >
       <Button
         style={{
-          fontWeight:600,
+          fontWeight: 600,
           color: "black",
           textDecoration: "underline", // Add underline
         }}
@@ -25,10 +26,10 @@ const UpperNavbar = () => {
       <Button
         variant="outlined"
         style={{
-          fontWeight:600,
+          fontWeight: 600,
           borderRadius: "34px",
           color: "black",
-          borderColor: "black"
+          borderColor: "black",
         }}
       >
         SIGN UP

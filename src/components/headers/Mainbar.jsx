@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import logoImage from "../../assets/logo.png"
+import logoImage from "../../assets/png/logo.png"
 const commonButtonStyle = {
   color: "black",
   fontWeight: 800,
