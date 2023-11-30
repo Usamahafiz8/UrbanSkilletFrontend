@@ -1,7 +1,18 @@
-import React from "react";
 import { Button } from "@mui/material";
+import { useRouter } from 'next/router';  
+import React from "react";
 
-const UpperNavbar = () => {
+export const UperBar = () => {
+  const router = useRouter();  
+
+  const login = () => {
+    router.push('/login'); 
+  };
+
+  const register = () => {
+    router.push('/register'); 
+  };
+
   return (
     <div
       style={{
@@ -11,7 +22,7 @@ const UpperNavbar = () => {
         padding: "10px 50px",
         gap: "16px",
         fontWeight: 600,
-        backgroundColor:"smokewhite"
+        backgroundColor: "smokewhite",
       }}
     >
       <Button
@@ -20,6 +31,7 @@ const UpperNavbar = () => {
           color: "black",
           textDecoration: "underline", // Add underline
         }}
+        onClick={login}
       >
         LOGIN
       </Button>
@@ -31,11 +43,10 @@ const UpperNavbar = () => {
           color: "black",
           borderColor: "black",
         }}
+        onClick={register}
       >
         SIGN UP
       </Button>
     </div>
   );
 };
-
-export default UpperNavbar;

@@ -5,6 +5,7 @@ import YoutubeIcon from "../../assets/svg/youtubeIcon";
 import FacebookIcon from "../../assets/svg/facebookIcon";
 import InstagramIcon from "../../assets/svg/InstagramIcon";
 import TicktokIcon from "../../assets/svg/ticktok";
+import Image from "next/image";
 
 export const LogoSection = () => {
   return (
@@ -16,11 +17,7 @@ export const LogoSection = () => {
         alignItems: "center",
       }}
     >
-      <img
-        src={logoImage}
-        alt="Logo"
-        style={{ height: "80px", width: "80px" }}
-      />
+      <Image src={logoImage} alt="Logo" width={80} height={80} />
       <div
         style={{
           display: "flex",

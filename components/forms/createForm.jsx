@@ -2,6 +2,9 @@ import { Button, TextField } from "@mui/material";
 import React from "react";
 import logoImage from "../../assets/png/logo.png";
 import Uheading1 from "../uHeading/uHeading1";
+import Image from "next/image";
+import Uheading2 from "../uHeading/Uheadings";
+import Link from "next/link";
 
 const commonStyles = {
   maxWidth: "350px",
@@ -32,7 +35,7 @@ const CreateUserForms = () => {
 
   return (
     <div style={styles}>
-      <img src={logoImage} alt="Logo" style={{ width: "100px", height: "100px" }} />
+      <Image src={logoImage} alt="Logo" width={"100px"} height={"100px"} />
       <Uheading1>Create Account</Uheading1>
       {renderTextField("Full Name")}
       {renderTextField("Email", "email")}
@@ -40,8 +43,17 @@ const CreateUserForms = () => {
       {renderTextField("Password", "password")}
       {renderTextField("Confirm Password", "password")}
       <Button variant="contained" fullWidth style={commonStyles}>
-        Login
+        Register
       </Button>
+      <div style={{display:"flex", alignItems:"center", gap:"8px"}}>
+
+      <Uheading2>
+        Already Register? 
+      </Uheading2>
+      <Uheading2>
+        <Link href={"/login"}>Login</Link>
+      </Uheading2>
+      </div>
     </div>
   );
 };

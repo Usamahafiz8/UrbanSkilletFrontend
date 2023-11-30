@@ -2,6 +2,9 @@ import { Button, TextField } from "@mui/material";
 import React from "react";
 import logoImage from "../../assets/png/logo.png";
 import Uheading1 from "../uHeading/uHeading1";
+import Image from "next/image";
+import Uheading2 from "../uHeading/Uheadings";
+import Link from "next/link";
 // import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 const styles = {
   display: "flex",
@@ -17,20 +20,12 @@ const styles = {
 const LoginForms = () => {
   return (
     <div>
-      {/* <Button variant="outlined" startIcon={<ArrowBackIosIcon />}>
-        Back to home
-      </Button> */}
       <div
         style={{
           ...styles,
         }}
       >
-        <img
-          src={logoImage}
-          ArrowBackIosIcon
-          alt="Logo"
-          style={{ width: "100px", height: "100px" }}
-        />
+        <Image src={logoImage} alt="Logo" width={"100vh"} height={"100vh"} />
         <Uheading1>Welcome Back, Login</Uheading1>
         <TextField
           label="Email"
@@ -47,6 +42,12 @@ const LoginForms = () => {
         <Button variant="contained" fullWidth style={{ maxWidth: "350px" }}>
           Login
         </Button>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Uheading2>Don't have an Account?</Uheading2>
+          <Uheading2>
+            <Link  href={"/register"}>Register</Link>
+          </Uheading2>
+        </div>
       </div>
     </div>
   );
