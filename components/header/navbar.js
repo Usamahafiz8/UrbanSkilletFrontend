@@ -1,15 +1,15 @@
 // MainNavbar.js
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import { Button } from "@mui/material";
 import logoImage from "../../assets/png/logo.png";
 
 const commonButtonStyle = {
   color: "black",
   fontWeight: 800,
-  fontSize: "15.875px",
+  fontSize: "1em",
   textTransform: "uppercase",
-  lineHeight: "24px"
+  lineHeight: "24px",
 };
 
 const buttonsData = [
@@ -33,10 +33,17 @@ const MainNavbar = () => {
         padding: "16px 50px",
         gap: "16px",
         fontWeight: 600,
-        boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       }}
     >
-      <Image src={logoImage} alt="Logo" width={50} height={50} />
+      <Image
+        src={logoImage}
+        alt="Logo"
+        style={{
+          width: "3em",
+          height: "3em",
+        }}
+      />
 
       <div>
         {buttonsData.map((button, index) => (
@@ -50,7 +57,11 @@ const MainNavbar = () => {
           </Button>
         ))}
       </div>
-      <Button variant="contained" color="error" style={{ fontWeight: 700, height: "30px" }}>
+      <Button
+        variant="contained"
+        color="error"
+        style={{ fontWeight: 700, height: "30px" }}
+      >
         Open Your Urban Skillet
       </Button>
     </div>

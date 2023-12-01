@@ -5,6 +5,7 @@ import Uheading1 from "../uHeading/uHeading1";
 import Image from "next/image";
 import Uheading2 from "../uHeading/Uheadings";
 import Link from "next/link";
+import CustomButton1 from "../uButtons/button1";
 
 const commonStyles = {
   maxWidth: "350px",
@@ -18,7 +19,6 @@ const styles = {
   width: "100%",
   height: "100%",
   gap: "16px",
-  padding: "50px 0px ",
 };
 
 const CreateUserForms = () => {
@@ -33,6 +33,11 @@ const CreateUserForms = () => {
     />
   );
 
+  const buttonStyles = {
+    ...commonStyles,
+    backgroundColor: "#B75F2D", // Set the background color here
+  };
+
   return (
     <div style={styles}>
       <Image src={logoImage} alt="Logo" width={"100px"} height={"100px"} />
@@ -42,17 +47,12 @@ const CreateUserForms = () => {
       {renderTextField("Phone Number", "tel")}
       {renderTextField("Password", "password")}
       {renderTextField("Confirm Password", "password")}
-      <Button variant="contained" fullWidth style={commonStyles}>
-        Register
-      </Button>
-      <div style={{display:"flex", alignItems:"center", gap:"8px"}}>
-
-      <Uheading2>
-        Already Register? 
-      </Uheading2>
-      <Uheading2>
-        <Link href={"/login"}>Login</Link>
-      </Uheading2>
+      <CustomButton1>Register</CustomButton1>
+      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+        <Uheading2>Already Register?</Uheading2>
+        <Uheading2>
+          <Link href={"/login"}>Login</Link>
+        </Uheading2>
       </div>
     </div>
   );

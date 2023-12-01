@@ -6,6 +6,7 @@ import SideAdd from "../adds/SideAdd";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Adds from "../../assets/png/catering202308141.png";
 import Image from "next/image";
+import CustomButton2 from "../uButtons/button2";
 const LoginPage = () => {
   const router = useRouter();
 
@@ -32,9 +33,12 @@ const LoginPage = () => {
           overflow: "scroll",
         }}
       >
-        <Button startIcon={<ArrowBackIosIcon />} onClick={handleBackToHome}>
+        <CustomButton2
+          startIcon={<ArrowBackIosIcon />}
+          onClick={handleBackToHome}
+        >
           Back to Home
-        </Button>
+        </CustomButton2>
         <LoginForms />
       </Grid>
       <Grid
@@ -44,8 +48,8 @@ const LoginPage = () => {
         xl={6}
         lg={6}
         md={6}
-        sm={12}
-        xs={12}
+        sm={0}
+        xs={0}
         sx={{
           height: "100vh",
           overflow: "hidden",

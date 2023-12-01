@@ -5,7 +5,8 @@ import Uheading1 from "../uHeading/uHeading1";
 import Image from "next/image";
 import Uheading2 from "../uHeading/Uheadings";
 import Link from "next/link";
-// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import CustomButton1 from "../uButtons/button1";
+
 const styles = {
   display: "flex",
   flexDirection: "column",
@@ -39,9 +40,7 @@ const LoginForms = () => {
           required
           style={{ maxWidth: "350px" }}
         />
-        <Button variant="contained" fullWidth style={{ maxWidth: "350px" }}>
-          Login
-        </Button>
+        <CustomButton1>Login</CustomButton1>
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <Uheading2>Don't have an Account?</Uheading2>
           <Uheading2>
