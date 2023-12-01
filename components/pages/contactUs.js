@@ -3,13 +3,12 @@ import React from "react";
 
 import ContactUsForm from "../forms/contactUsForm";
 import SideAdd from "../adds/SideAdd";
-import UTopBanner from "../banners/uTopBanner";
 
 const ContactUsPage = () => {
   return (
     <Grid container item style={{ padding: "12px 0px" }}>
       <Grid xl={12} lg={12} md={12} sm={12} xs={12}>
-        <UTopBanner backgroundImage={""} text={"dsfj"} />
+        baner
       </Grid>
       <Grid
         xl={8}
@@ -21,7 +20,7 @@ const ContactUsPage = () => {
       >
         <ContactUsForm />
       </Grid>
-      <Grid xl={4} lg={4} md={4} sm={0} xs={0}>        
+      <Grid xl={4} lg={4} md={4} sm={0} xs={0}>
         <SideAdd />
       </Grid>
     </Grid>
