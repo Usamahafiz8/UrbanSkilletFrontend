@@ -45,7 +45,7 @@ const LoginForms = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <Uheading2>Don't have an Account?</Uheading2>
           <Uheading2>
-            <Link  href={"/register"}>Register</Link>
+            <Link href={"/register"}>Register</Link>
           </Uheading2>
         </div>
       </div>

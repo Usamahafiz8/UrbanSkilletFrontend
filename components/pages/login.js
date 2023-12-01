@@ -1,19 +1,25 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
-import { useRouter } from 'next/router';  
+import { useRouter } from "next/router";
 import LoginForms from "../forms/loginForms";
 import SideAdd from "../adds/SideAdd";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-
+import Adds from "../../assets/png/catering202308141.png";
+import Image from "next/image";
 const LoginPage = () => {
-  const router = useRouter();  
+  const router = useRouter();
 
   const handleBackToHome = () => {
-    router.push('/');  
+    router.push("/");
   };
 
   return (
-    <Grid container>
+    <Grid
+      container
+      sx={{
+        height: "100vh",
+      }}
+    >
       <Grid
         item
         xl={6}
@@ -21,8 +27,9 @@ const LoginPage = () => {
         md={6}
         sm={12}
         xs={12}
-        style={{
+        sx={{
           padding: "24px",
+          overflow: "scroll",
         }}
       >
         <Button startIcon={<ArrowBackIosIcon />} onClick={handleBackToHome}>
@@ -30,8 +37,27 @@ const LoginPage = () => {
         </Button>
         <LoginForms />
       </Grid>
-      <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
-        <SideAdd />
+      <Grid
+        item
+        right={0}
+        position={"fixed"}
+        xl={6}
+        lg={6}
+        md={6}
+        sm={12}
+        xs={12}
+        sx={{
+          height: "100vh",
+          overflow: "hidden",
+        }}
+      >
+        <Image
+          src={Adds}
+          alt="Logo"
+          style={{
+            width: "100%",
+          }}
+        />
       </Grid>
     </Grid>
   );
