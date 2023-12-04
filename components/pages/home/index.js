@@ -5,14 +5,18 @@ import FollowUp from "./followup";
 import MonthBurgerBaner from "./monthBurgerBaner";
 import Blogs from "../../blogs";
 import { BlogContent } from "../../content/blogContent";
+import AddSection from "./addSection";
+import useIsMobile800 from "../../mobileView/mobileView800";
 
 const Indexpage = () => {
+  const IsMobile = useIsMobile800();
   return (
     <div>
       <MainHeadBaner />
       <MainBanner />
       <FollowUp />
-      <MonthBurgerBaner />
+      {!IsMobile && <MonthBurgerBaner />}
+      <AddSection />
       <Blogs blogContent={BlogContent} />
     </div>
   );

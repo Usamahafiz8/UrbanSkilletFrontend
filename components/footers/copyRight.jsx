@@ -8,7 +8,7 @@ export const CopyRight = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
-        marginTop:"10px",
+        marginTop: "10px",
       }}
     >
       <Uheading2

@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Uheading2 = ({ children, styles }) => {
+const Uheading2 = ({ children, styles, weight }) => {
   return (
     <Typography
-      style={{
+      sx={{
         fontSize: "13px",
         fontWeight: "400",
         marginBottom: "8px",

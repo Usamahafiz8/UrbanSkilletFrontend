@@ -2,11 +2,11 @@ import React from "react";
 import BlogCard from "./blogCard";
 import Uheading2 from "../uHeading/Uheadings";
 import Uheading3 from "../uHeading/uHeading3";
+import useIsMobile800 from "../mobileView/mobileView800";
 
 const Blogs = ({ blogContent }) => {
-  console.log(blogContent);
-
-  const firstThreeBlogs = blogContent.slice(0, 3);
+  const IsMobile = useIsMobile800();
+  const firstThreeBlogs = blogContent.slice(0, IsMobile ? 1 : 3);
 
   return (
     <div
