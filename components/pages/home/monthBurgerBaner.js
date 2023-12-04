@@ -48,7 +48,8 @@ const MonthBurgerBaner = () => {
         background: "linear-gradient(180deg, #AF2000 0%, #E6730A 100%)",
         boxShadow: "0px 4px 51px 0px #FFE000 inset",
         width: "100%",
-        height: "30em",
+        height: "100%",
+        padding: "16px",
       }}
     >
       <GridItem>

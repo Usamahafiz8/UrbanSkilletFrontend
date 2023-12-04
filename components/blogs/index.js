@@ -22,7 +22,7 @@ const Blogs = ({ blogContent }) => {
     >
       <Uheading3
         styles={{
-          fontSize: "36px",
+          fontSize: IsMobile ? "28px" : "36px",
         }}
       >
         OUR LATEST NEWS & ARTICLE
